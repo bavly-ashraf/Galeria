@@ -1,5 +1,6 @@
 # Galeria
 
+A colorful user album database website (made using Angular and bootstrap and it's responsive web design)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
 ## Development server
