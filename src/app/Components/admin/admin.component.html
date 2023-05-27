@@ -1,0 +1,144 @@
+<div class="container-fluid h-100 overflow-hidden">
+  <div class="row mx-4 my-2 overflow-y-auto">
+    <!-- header section -->
+    <app-header></app-header>
+
+    <!--userList head section-->
+    <div class="col-12 mt-3 p-0">
+      <h1 class="fw-semibold">User List</h1>
+    </div>
+
+    <!--info &addbtn section-->
+    <div
+    *ngIf='users; else falseBlock;'
+      class=" col-12 mt-3 pb-3 p-0 d-flex justify-content-between align-items-center"
+      style="border-bottom: 1px solid #e3e3e8"
+    >
+      <div class="detailsNum">
+        <span style="color: #848487">
+          <span style="color: #11d51f" class="fw-bolder"> {{users?.length}} </span>
+          users
+        </span>
+        <span style="color: #848487">
+          <span style="color: #11d51f" class="fw-bolder"> {{albums?.length}} </span>
+          albums
+        </span>
+        <span style="color: #848487">
+          <span style="color: #11d51f" class="fw-bolder"> {{photos?.length}} </span>
+          photos
+        </span>
+      </div>
+      <div class="d-flex">
+        <div class="d-flex me-5">
+          <i class="p-3 pe-2 fs-5 fw-bold fa-solid fa-magnifying-glass"></i>
+          <input (input)="userSearch($event)" class="search-btn" style="background-color: #ECF0F3;" placeholder="Search" />
+        </div>
+      <a style="text-decoration: none;" (click)="fireNow()" routerLink="/signup"><button
+          style="background-color: #11d51f; border: 1px solid #ffff"
+          class="addbtn d-flex mb-2 align-items-center justify-content-between py-2 px-5 text-white rounded-3"
+        >
+          <span style="margin-left: -35px">Add user</span>
+          <i
+            class="fa-solid fa-plus"
+            style=" margin-right: -35px"
+          ></i>
+        </button>
+      </a>
+      </div>
+    </div>
+<ng-template #falseBlock>
+  <div id="load">
+    <div>G</div>
+    <div>N</div>
+    <div>I</div>
+    <div>D</div>
+    <div>A</div>
+    <div>O</div>
+    <div>L</div>
+  </div>
+</ng-template>
+    <!--card section-->
+    <div *ngFor="let u of searchUserArr||users" class="card1 col-12 mt-5 p-0 d-flex px-4 py-4 justify-content-evenly shadow rounded p-3 mb-5" style="background-color: #fff">
+      <img
+        style="
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-image: url(https://inews.gtimg.com/newsapp_match/0/8693739867/0);
+          background-size: cover;
+        "
+        alt=""
+      />
+
+      <!--userInfo start-->
+      <div class="d-flex">
+        <a class="d-flex links" style="text-decoration: none;" routerLink="/user/{{u.id}}">
+        <div
+          class="ms-5 d-flex flex-column text-capitalize"
+          style="color: #848487"
+        >
+          <span class="fs-5">name</span>
+          <span class="mt-2 text-black dark:text-gray-200">
+            {{u.name}}
+          </span>
+        </div>
+        <div
+          class="ms-5 d-flex flex-column text-capitalize"
+          style="color: #848487"
+        >
+          <span class="fs-5">username</span>
+          <span class="mt-2 text-black">{{u.username}}</span>
+        </div>
+        <div
+          class="ms-5 d-flex flex-column text-capitalize"
+          style="color: #848487"
+        >
+          <span class="fs-5">email</span>
+          <span class="mt-2 text-black"> {{u.email}} </span>
+        </div>
+        <div
+          class="ms-5 d-flex flex-column text-capitalize"
+          style="color: #848487"
+        >
+          <span class="fs-5">address</span>
+          <span class="mt-2 text-black">
+            {{u.address.street}} {{u.address.suite}} {{u.address.city}}
+          </span>
+        </div>
+        <div
+          class="ms-5 d-flex flex-column text-capitalize"
+          style="color: #848487"
+        >
+          <span class="fs-5">phone</span>
+          <span class="mt-2 text-black"> {{u.phone}} </span>
+        </div>
+        </a>
+      </div>
+
+      <!-- Buttons Start -->
+      <div class="btnsAll d-flex " >
+                <div
+                (click)="editBtn(u)"
+                class="ms-5 d-flex flex-column text-capitalize"
+                style="color: #848487"
+              >
+                <span class="fs-5">edit</span>
+                <span class="mt-2 ms-2 text-black">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </span>
+              </div>
+              <div (click)="deleteBtn(u.id)"
+                class="ms-5 d-flex flex-column text-capitalize"
+                style="color: #848487"
+              >
+                <span class="fs-5">delete</span>
+                <span class="mt-2 ms-3 text-black">
+                  <i class="fa-solid fa-trash"></i>
+                </span>
+              </div>
+      </div>
+      <!--userInfo end-->
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="container-fluid userHeader">
+  <div class="row justify-content-evenly align-items-center">
+    <div class="col-12 col-sm-12 col-md-3 text-center text-white row justify-content-center align-items-center">
+      <i class="bi bi-body-text text-w col-12 col-sm-12 col-md-1 fs-4"></i>
+      <h1 class="col-12 col-sm-12 col-md-11">{{user?.name}}</h1>
+    </div>
+    <div class="col-12 col-sm-12 col-md-3 text-center text-white">
+      <i class="bi bi-envelope-at-fill text-warning fs-4"></i>
+      <p class="fs-5">{{user?.email}}</p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-3 text-center text-white">
+      <i class="bi bi-telephone-fill text-black fs-4"></i>
+      <p class="fs-5">{{user?.phone}}</p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-3 text-center text-white">
+      <i class="bi bi-geo-alt-fill text-danger fs-4"></i>
+      <p class="fs-5">Address: {{user?.address.city}}</p>
+    </div>
+  </div>
+</div>
+<div class="container-md">
+  <!-- <div class="row text-center mt-3 fs-4 border-bottom">
+    <p class="col-12">{{user?.name}}'s Albums</p>
+  </div> -->
+  <div *ngIf="userAlbums; else falseBlock" class="row mt-3 justify-content-center">
+    <app-single-album (click)="navigateToPhotos(album.id)" *ngFor="let album of userAlbums" [childComponent]="album" class="p-2" style="width: auto;"></app-single-album>
+  </div>
+</div>
+<ng-template #falseBlock>
+  <div class="container">
+    <div class="dash uno"></div>
+    <div class="dash dos"></div>
+    <div class="dash tres"></div>
+    <div class="dash cuatro"></div>
+  </div>
+</ng-template>

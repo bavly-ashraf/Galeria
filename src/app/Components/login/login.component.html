@@ -1,0 +1,50 @@
+ <div class="wrapper">
+  <div class="logo">
+      <img src="./assets/Images/2.png" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+    <h6 class="py-3">
+      <span>Welcome to our </span>
+      <span class="animated-text">GALERIA</span>
+      <span> team</span>
+    </h6>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input [(ngModel)]="selectedOption" type="radio" name="role" value="user" checked>
+    User
+  </label>
+  <label>
+    <input [(ngModel)]="selectedOption" type="radio" name="role" value="admin">
+    Admin
+  </label>
+  </div>
+
+  <form [formGroup]="myValidation" (submit)="Add()" class="p-3 mt-3">
+    <div class="row form-group form-field d-flex align-items-center">
+      <div class="col-sm-9 inputat">
+        <input formControlName="email" placeholder="E-mail" type="text" id="email" class="" style="border: none; outline: none;" />
+      </div>
+    </div>
+    <div *ngIf="showErrorMessages" class="alert text-danger mail" role="alert" [hidden]="myValidation.controls.email.valid">
+      E-mail is required and must be valid
+    </div>
+
+     <div class="row form-group form-field d-flex align-items-center">
+      <div class="col-sm-9">
+        <input formControlName="password" placeholder="password" type="password" id="password" class="" />
+      </div>
+    </div>
+    <div *ngIf="showErrorMessages" class="alert text-danger" role="alert" [hidden]="myValidation.controls.password.valid">
+      Password is required and must be valid
+    </div>
+    <!-- <div *ngIf="showErrorMessages" class="alert text-danger" role="alert">
+      Password or Email is incorrect
+    </div> -->
+    <button class="btn mt-3">Login</button>
+  </form>
+  <div [hidden]="adminCheck" class="text-center fs-6">
+    <span class="reg">Don't have any account? <a routerLink="/signup"><button type="button" class="btn btn-outline-success">Create new</button></a></span>
+  </div>
+</div>
+

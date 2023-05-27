@@ -1,0 +1,45 @@
+.user {
+  color: #11d51f;
+  position: relative;
+  transition: all 0.2s;
+}
+.user::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -15px;
+  left: 0;
+  background-color: #11d51f;
+}
+
+a.nav-link.active:hover {
+  position: relative;
+  color: #11d51f;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+a.nav-link.active:hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -15px;
+  left: 0;
+  background-color: #11d51f;
+}
+
+li.nav-item {
+  padding-left: 10px;
+}
+
+.fa-right-from-bracket {
+  transition: all 0.2s;
+}
+.fa-right-from-bracket:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+

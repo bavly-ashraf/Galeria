@@ -1,0 +1,64 @@
+    <!-- header section -->
+    <div class="col-12 p-0">
+      <nav class="navbar navbar-expand-lg p-1" style="background-color: #ECF0F3;">
+        <div
+          class="container-fluid d-flex p-0"
+          style="border-bottom: 1px solid #e3e3e8"
+        >
+          <a class="navbar-brand" href="#"
+            ><img
+              style="width: 100px"
+              src="assets/Images/7216158496df75ae737c1ef4cee873c7.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto me-lg-auto mb-1 mb-lg-0 p-1">
+              <li class="nav-item">
+                <a
+                  style="color: #11d51f"
+                  class="user fw-semibold nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Users</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="fw-semibold role nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Role</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="fw-semibold access nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Access Rights</a
+                >
+              </li>
+            </ul>
+
+            <div class="d-flex ps-2 mt-sm-1 ms-sm-1">
+              <span class="me-2 fw-semibold">Log Out</span>
+              <a routerLink="/login"><i
+                (click)="clearCookie()"
+                style="color: rgb(239, 6, 6)"
+                class="mt-1 fs-5 fa-solid fa-right-from-bracket"
+              ></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>

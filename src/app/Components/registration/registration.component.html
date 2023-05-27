@@ -1,0 +1,76 @@
+<div class="wrapper">
+  <div class="logo">
+    <img src="assets/Images/2.png" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+      JOIN US NOW!!
+  </div>
+
+
+  <form [formGroup]="myValidation" (submit)="Add()" class="p-3 mt-3">
+    <div class="row form-group form-field d-flex align-items-center">
+      <div class="col-sm-9 inputat">
+        <input formControlName="name" placeholder="Name" type="text" class="" style="border: none; outline: none;" />
+      </div>
+    </div>
+    <div *ngIf="showErrorMessages" class="alert text-danger" role="alert" [hidden]="myValidation.controls.name.valid">
+      Name is required and must be valid
+    </div>
+    <div class="row form-group form-field d-flex align-items-center">
+      <div class="col-sm-9 inputat">
+        <input formControlName="userName" placeholder="Username" type="text" id="name" class="" style="border: none; outline: none;" />
+      </div>
+    </div>
+    <div *ngIf="showErrorMessages" class="alert text-danger" role="alert" [hidden]="myValidation.controls.userName.valid">
+      Username is required and must be valid
+    </div>
+    <div class="row form-group form-field d-flex align-items-center">
+      <div class="col-sm-9 inputat">
+        <input formControlName="email" placeholder="E-mail" type="text" id="email" class="" style="border: none; outline: none;" />
+      </div>
+    </div>
+    <div *ngIf="showErrorMessages" class="alert text-danger" role="alert" [hidden]="myValidation.controls.email.valid">
+      E-mail is required and must be valid
+    </div>
+    <div class="row form-group form-field d-flex align-items-center">
+      <div class="col-sm-9 inputat">
+        <input formControlName="phone" placeholder="Phone" type="text" class="" style="border: none; outline: none;" />
+      </div>
+    </div>
+    <div *ngIf="showErrorMessages" class="alert text-danger" role="alert" [hidden]="myValidation.controls.phone.valid">
+      Phone is required and must be valid
+    </div>
+    <div class="row form-group form-field d-flex align-items-center">
+      <div class="row-sm-4 inputat">
+        <input formControlName="street" placeholder="Street" type="text" id="street" class="" style="border: none; outline: none;" />
+      </div>
+      <div *ngIf="showErrorMessages" class="alert text-danger" role="alert" [hidden]="myValidation.controls.street.valid">
+        Street is required and must be valid
+      </div>
+      <div class="row-sm-4 inputat">
+        <input formControlName="suite" placeholder="Suite" type="text" id="suite" class="" style="border: none; outline: none;" />
+      </div>
+      <div *ngIf="showErrorMessages" class="alert text-danger" role="alert" [hidden]="myValidation.controls.suite.valid">
+        Suite is required and must be valid
+      </div>
+      <div class="row-sm-4 inputat">
+        <input formControlName="city" placeholder="City" type="text" id="city" class="" style="border: none; outline: none;" />
+      </div>
+      <div *ngIf="showErrorMessages" class="alert text-danger" role="alert" [hidden]="myValidation.controls.city.valid">
+        City is required and must be valid
+      </div>
+    </div>
+
+    <div class="row form-group form-field d-flex align-items-center">
+      <div class="col-sm-9">
+        <input formControlName="password" placeholder="password" type="password" id="password" class="" />
+      </div>
+    </div>
+    <div *ngIf="showErrorMessages" class="alert text-danger" role="alert" [hidden]="myValidation.controls.password.valid">
+      Password is required and must be valid
+    </div>
+    <div class="regBtn">
+      <button #myBtn class="btn regBtn mt-3">{{getData()||'Register'}}</button>
+    </div>
+    </form>
+</div>

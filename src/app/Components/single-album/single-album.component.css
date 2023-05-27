@@ -1,0 +1,17 @@
+.customEditImg{
+  /* border: 3px solid #faf9f9; */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.customEditImg:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+/* .customEditBody{
+  background-color: #faf9f9;
+  color: #11d51f;
+} */
+.rectangleAfterImg{
+  background-color: #11d51f;
+  color: #faf9f9;
+}
