@@ -1,68 +1,7 @@
 {
   "users": [
     {
-      "name": "Clementine Bauch",
-      "phone": "1-463-123-4447",
-      "username": "Samantha",
-      "email": "Nathan@yesenia.net",
-      "address": {
-        "street": "Douglas Extension",
-        "city": "McKenziehaven",
-        "suite": "Suite 847"
-      },
-      "password": "passqwyawi123",
-      "id": 3
-    },
-    {
-      "id": 4,
-      "password": "passqwyawi123",
-      "name": "Patricia Lebsack",
-      "username": "Karianne",
-      "email": "Julianne.OConner@kory.org",
-      "address": {
-        "street": "Hoeger Mall",
-        "suite": "Apt. 692",
-        "city": "South Elvis",
-        "zipcode": "53919-4257",
-        "geo": {
-          "lat": "29.4572",
-          "lng": "-164.2990"
-        }
-      },
-      "phone": "493-170-9623 x156",
-      "website": "kale.biz",
-      "company": {
-        "name": "Robel-Corkery",
-        "catchPhrase": "Multi-tiered zero tolerance productivity",
-        "bs": "transition cutting-edge web services"
-      }
-    },
-    {
-      "id": 5,
-      "password": "passqwyawi123",
-      "name": "Chelsey Dietrich",
-      "username": "Kamren",
-      "email": "Lucio_Hettinger@annie.ca",
-      "address": {
-        "street": "Skiles Walks",
-        "suite": "Suite 351",
-        "city": "Roscoeview",
-        "zipcode": "33263",
-        "geo": {
-          "lat": "-31.8129",
-          "lng": "62.5342"
-        }
-      },
-      "phone": "(254)954-1289",
-      "website": "demarco.info",
-      "company": {
-        "name": "Keebler LLC",
-        "catchPhrase": "User-centric fault-tolerant solution",
-        "bs": "revolutionize end-to-end systems"
-      }
-    },
-    {
-      "id": 6,
+      "id": 1,
       "password": "passqwyawi123",
       "name": "Mrs. Dennis Schulist",
       "username": "Leopoldo_Corkery",
@@ -96,7 +35,7 @@
         "suite": "18"
       },
       "password": "passqwyawi123",
-      "id": 7
+      "id": 2
     },
     {
       "name": "DoniaaaaaaAmin",
@@ -109,7 +48,7 @@
         "suite": "18"
       },
       "password": "passqwyawi123",
-      "id": 8
+      "id": 3
     },
     {
       "name": "ayhamadaaaaaaa",
@@ -122,7 +61,7 @@
         "suite": "18"
       },
       "password": "passqwyawi123",
-      "id": 9
+      "id": 4
     },
     {
       "name": "doniaaminas",
@@ -135,7 +74,7 @@
         "suite": "adwef"
       },
       "password": "187237654672343",
-      "id": 10
+      "id": 5
     }
   ],
   "albums": [
@@ -203,131 +142,6 @@
       "userId": 5,
       "id": 50,
       "title": "sed qui sed quas sit ducimus dolor"
-    },
-    {
-      "userId": 6,
-      "id": 56,
-      "title": "omnis qui maiores tempora officiis omnis rerum sed repellat"
-    },
-    {
-      "userId": 6,
-      "id": 57,
-      "title": "libero excepturi voluptatem est architecto quae voluptatum officia tempora"
-    },
-    {
-      "userId": 6,
-      "id": 58,
-      "title": "nulla illo consequatur aspernatur veritatis aut error delectus et"
-    },
-    {
-      "userId": 6,
-      "id": 59,
-      "title": "eligendi similique provident nihil"
-    },
-    {
-      "userId": 6,
-      "id": 60,
-      "title": "omnis mollitia sunt aliquid eum consequatur fugit minus laudantium"
-    },
-    {
-      "userId": 7,
-      "id": 66,
-      "title": "velit sed quia dolor dolores delectus"
-    },
-    {
-      "userId": 7,
-      "id": 67,
-      "title": "ad voluptas nostrum et nihil"
-    },
-    {
-      "userId": 7,
-      "id": 68,
-      "title": "qui quasi nihil aut voluptatum sit dolore minima"
-    },
-    {
-      "userId": 7,
-      "id": 69,
-      "title": "qui aut est"
-    },
-    {
-      "userId": 7,
-      "id": 70,
-      "title": "et deleniti unde"
-    },
-    {
-      "userId": 8,
-      "id": 76,
-      "title": "dolorem magnam facere itaque ut reprehenderit tenetur corrupti"
-    },
-    {
-      "userId": 8,
-      "id": 77,
-      "title": "cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia"
-    },
-    {
-      "userId": 8,
-      "id": 78,
-      "title": "est minima eius possimus ea ratione velit et"
-    },
-    {
-      "userId": 8,
-      "id": 79,
-      "title": "ipsa quae voluptas natus ut suscipit soluta quia quidem"
-    },
-    {
-      "userId": 8,
-      "id": 80,
-      "title": "id nihil reprehenderit"
-    },
-    {
-      "userId": 9,
-      "id": 86,
-      "title": "eligendi mollitia alias aspernatur vel ut iusto"
-    },
-    {
-      "userId": 9,
-      "id": 87,
-      "title": "aut aut architecto"
-    },
-    {
-      "userId": 9,
-      "id": 88,
-      "title": "quas perspiciatis optio"
-    },
-    {
-      "userId": 9,
-      "id": 89,
-      "title": "sit optio id voluptatem est eum et"
-    },
-    {
-      "userId": 9,
-      "id": 90,
-      "title": "est vel dignissimos"
-    },
-    {
-      "userId": 10,
-      "id": 96,
-      "title": "unde et ut molestiae est molestias voluptatem sint"
-    },
-    {
-      "userId": 10,
-      "id": 97,
-      "title": "est quod aut"
-    },
-    {
-      "userId": 10,
-      "id": 98,
-      "title": "omnis quia possimus nesciunt deleniti assumenda sed autem"
-    },
-    {
-      "userId": 10,
-      "id": 99,
-      "title": "consectetur ut id impedit dolores sit ad ex aut"
-    },
-    {
-      "userId": 10,
-      "id": 100,
-      "title": "enim repellat iste"
     }
   ],
   "photos": [
@@ -435,41 +249,6 @@
       "title": "eum et quia voluptatem unde",
       "url": "https://via.placeholder.com/600/d9acde",
       "thumbnailUrl": "https://via.placeholder.com/150/d9acde"
-    },
-    {
-      "albumId": 11,
-      "id": 541,
-      "title": "quia molestiae repellendus expedita quis consequatur enim",
-      "url": "https://via.placeholder.com/600/343aa4",
-      "thumbnailUrl": "https://via.placeholder.com/150/343aa4"
-    },
-    {
-      "albumId": 11,
-      "id": 542,
-      "title": "perferendis aliquid et nulla occaecati voluptas tempore",
-      "url": "https://via.placeholder.com/600/187191",
-      "thumbnailUrl": "https://via.placeholder.com/150/187191"
-    },
-    {
-      "albumId": 11,
-      "id": 543,
-      "title": "ratione culpa unde et et voluptas",
-      "url": "https://via.placeholder.com/600/5f8db6",
-      "thumbnailUrl": "https://via.placeholder.com/150/5f8db6"
-    },
-    {
-      "albumId": 11,
-      "id": 544,
-      "title": "ex totam aliquam consequatur voluptas est",
-      "url": "https://via.placeholder.com/600/2dfa38",
-      "thumbnailUrl": "https://via.placeholder.com/150/2dfa38"
-    },
-    {
-      "albumId": 11,
-      "id": 545,
-      "title": "id explicabo qui cumque ut et repellendus aut",
-      "url": "https://via.placeholder.com/600/69125",
-      "thumbnailUrl": "https://via.placeholder.com/150/69125"
     }
   ],
   "admins": [
