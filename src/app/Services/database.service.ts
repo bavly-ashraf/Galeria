@@ -8,7 +8,7 @@ export class DatabaseService {
   private sharedData: any;
   private shareEditData:any;
 
-  private Base_URL = "http://localhost:3000"
+  private Base_URL = "https://my-json-server.typicode.com/bavly-ashraf/Galeria"
   constructor(private myClient:HttpClient) { }
 
   getAllUsers(){
